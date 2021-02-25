@@ -1,0 +1,63 @@
+<div class="title-page">
+  <h2>רשימת מטופלים</h2>
+</div>
+
+<table class="table-shadow">
+  <thead>
+    <tr>
+      <th class="room-table-head">שם</th>
+      <th class="room-table-head">אימייל</th>
+      <th class="room-table-head xl-block">IP</th>
+      <th class="room-table-head">תאריך הצטרפות</th>
+      <th class="room-table-head">פעולות</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="room-table-col" contenteditable="false" #roomName>
+        אליהו סימנובסקי
+      </td>
+      <td class="room-table-action">
+        <button class="button-shadow room-edit" (click)="onEdit()">
+          ערוך
+        </button>
+        <button
+          class="button-shadow room-delete"
+          (click)="isAppearWarningDelete=true"
+        >
+          מחק
+        </button>
+      </td>
+      <td class="xl-block">255.255.255.255</td>
+      <td>ronziyoni@gmail.com</td>
+      <td>25.12.22</td>
+    </tr>
+    <tr>
+      <td class="room-table-col" contenteditable="false" #roomName>
+        אליהו סימנובסקי
+      </td>
+      <td class="room-table-action">
+        <button class="button-shadow room-edit" (click)="onEdit()">
+          ערוך
+        </button>
+        <button
+          class="button-shadow room-delete"
+          (click)="isAppearWarningDelete=true"
+        >
+          מחק
+        </button>
+      </td>
+      <td class="xl-block">255.255.255.255</td>
+      <td>ronziyoni@gmail.com</td>
+      <td>25.12.22</td>
+    </tr>
+  </tbody>
+</table>
+<app-add-icon (click)="isAppearCreateModal=true"></app-add-icon>
+
+<div class="wrap-modal">
+  <div class="modal-container">
+    <app-patient-edit></app-patient-edit>
+  </div>
+</div>
+<div appTryDirective></div>

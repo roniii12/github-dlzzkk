@@ -1,0 +1,9 @@
+.modal-container {
+  padding: 20px 40px;
+}
+
+@media screen and (max-width: 1050px) {
+  .xl-block {
+    display: none;
+  }
+}
